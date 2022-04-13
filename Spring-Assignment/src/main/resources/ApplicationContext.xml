@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/context
+                http://www.springframework.org/schema/context/spring-context.xsd">
+                
+     			<context:annotation-config />
+     			
+     	 <bean id="person1" class="com.assignment.spring.Q1.Person">
+     	 	<constructor-arg index="0" value="Anthony" />
+     	 	<constructor-arg index="1" value="male" />
+     	 	<constructor-arg index="2" value="26" />
+      	</bean>
+     	 <bean id="cat1" class="com.assignment.spring.Q1.Cat">
+      		<property name = "name" value = "Tom" />
+      		<property name = "breed" value = "ragdoll" />
+      		<property name = "age" value = "4" />
+      	</bean>
+     	 <bean id="dog1" class="com.assignment.spring.Q1.Dog">
+     	 	<constructor-arg index="0" value="Pluto" />
+     	 	<constructor-arg index="1" value="bloodhound" />
+     	 	<constructor-arg index="2" value="5" />
+      	</bean>
+     	 <bean id="pet" class="com.assignment.spring.Q1.Animal">
+     	 	<constructor-arg index="0" value="Porker" />
+     	 	<constructor-arg index="1" value="2" />
+      	</bean>
+
+ </beans>
